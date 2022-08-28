@@ -1,5 +1,4 @@
 // Your code here
-
 const filmsList = document.getElementById ('films')
 const filmTitle = document.getElementById ('title')
 const filmDescription = document.getElementById ('film-info')
