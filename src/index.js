@@ -49,6 +49,15 @@ function loadFilms() {
     xhttp.send();
   }
 
+  const buyButton = document.getElementById ("buy-ticket")
+  buyButton.addEventListener ("click", function(){
 
-
+    let ticketsRemaining = filmCapacity.innerText
+    if (ticketsRemaining == 0 ) {
+      buyButton.innerText = "SOLD OUT"
+    }
+    else {
+      filmCapacity.innerText = --ticketsRemaining
+    }
+  })
 
